@@ -12,7 +12,7 @@ on:
       version:
         description: 'Which Version of Docs to Deploy'
         required: true
-        default: '0.95'
+        default: 'hello'
         type: string
         options:
           - '0.95'
