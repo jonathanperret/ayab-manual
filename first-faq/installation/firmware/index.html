@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Firmware - AYAB Manual</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/version-select.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Firmware";
+        var mkdocs_page_input_path = "installation/firmware.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> AYAB Manual
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Installation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware/">Hardware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../software/">Software</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Firmware</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#uploading-the-firmware">Uploading the firmware</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../gui/">Graphical User Interface</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">How To Knit</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../how_to_knit/basics/">Basics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../how_to_knit/dbj_2-color/">Double Bed Jaquard (2-color)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../how_to_knit/dbj_middle-color-twice/">Middle-Color-Twice</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../how_to_knit/dbj_heart-of-pluto/">Heart of Pluto</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../how_to_knit/circular_knitting/">Circular Knitting</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../pattern_image_creation/">Pattern Creation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../faq/">Frequently Asked Questions</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/connectors/">Connectors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/API/">API</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">AYAB Manual</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Installation &raquo;</li>
+      <li>Firmware</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/AllYarnsAreBeautiful/ayab-manual/edit/master/docs/installation/firmware.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="firmware">Firmware</h1>
+<p>Part of the software that makes up AYAB runs on the Arduino board that is either plugged into your AYAB shield or part of your AYAB interface. We call this part the <strong>firmware</strong>. It is very small (about the size of a plain text email) but crucial to the operation of AYAB!</p>
+<p>The AYAB desktop application you installed on your computer contains the necessary firmware ready to copy to the Arduino board, but you need to ask it to do that operation. We call this "uploading" or "flashing" the firmware.</p>
+<p>You should perform this operation every time you install a new AYAB version on your computer. Or, if you have multiple versions of AYAB installed (for testing, for example), every time you switch from one version to another.</p>
+<p>Starting with AYAB 1.0, the same firmware is used regardless of the knitting machine you install the shield or interface into. So, if you have multiple knitting machines and move your AYAB shield or interface between them, there is no need to upload the firmware again every time you switch between machines.</p>
+<h2 id="uploading-the-firmware">Uploading the firmware</h2>
+<p>These steps assume you have already followed the <a href="../software/">Software installation</a> instructions.</p>
+<p>Do not launch the AYAB application yet! First, plug your Arduino board or AYAB interface into your computer with the correct USB cable. At least one LED should light up on the board. If the computer prompts you to install drivers, follow its instructions.</p>
+<p>Note that the shield or interface does not need to be connected to the knitting machine for this operation, but if it is, there is no need to separate it from the machine either.</p>
+<p>Next, launch the AYAB software. Open to the <strong>Tools</strong> menu and choose the <strong>Load AYAB firmware</strong> item.</p>
+<p><img alt="" src="../../img/menu-tools-load-firmware.png" /></p>
+<p>AYAB's <em>Firmware Flashing Utility</em> opens.</p>
+<p><img alt="" src="../../img/firmware-flashing-utility.png" /></p>
+<p>Look at the <strong>Port</strong> drop-down in the top right of the window. If it is empty, it means your Arduino board was not detected. Make sure the board is correctly plugged in; to give it another chance, you will have to close the <em>Firmware Flashing Utility</em> and re-open it so that it tries to detect the board again.</p>
+<p>If multiple devices appear in the list and you're not sure which is your AYAB board, you can try unplugging non-essential USB devices from your computer, then close and re-open the <em>Firmware Flashing Utility</em> so that the list is refreshed.</p>
+<p>Once you have selected the correct <strong>Port</strong>, you can go on to select the <strong>uno</strong> controller (this is the only type of Arduino board that AYAB 1.0 supports), then the <strong>Firmware Version</strong> of which there will generally only be one — the one that works with the AYAB application you are running.</p>
+<p>Once the firmware version is selected, the <strong>Flash</strong> button becomes available. Click it, and if everything goes to plan, after a few seconds the software should tell you the operation is complete:</p>
+<p><img alt="" src="../../img/firmware-flashing-done.png" /></p>
+<p>Close the pop-up and the <em>Firmware Flashing Utility</em>. You're all set to knit!</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../software/" class="btn btn-neutral float-left" title="Software"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../gui/" class="btn btn-neutral float-right" title="Graphical User Interface">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/AllYarnsAreBeautiful/ayab-manual" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../software/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../gui/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+      <script src="../../js/version-select.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
