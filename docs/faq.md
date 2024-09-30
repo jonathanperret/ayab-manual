@@ -10,3 +10,7 @@ Say you want to make a sleeve with an allover pattern, starting with 50 stitches
 **Important**: even on the early rows while the knitting is narrower than the file, you will need to take the carriage out past L45 or R45 on every row. As always, listen for the beep.
 
 ([source for this Q & A](https://www.ravelry.com/discuss/ayab/3618357/1-25#3)) 
+
+### Can I pause the knitting of a pattern?
+
+There is currently no dedicated feature to pause knitting in AYAB, but if you need to stop knitting, take note of the current row. When you want to resume knitting, use the **Start Row** setting of AYAB to resume where you left off.
