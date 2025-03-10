@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Hardware - AYAB Manual</title>
+    <title>Getting Help - AYAB Manual</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Hardware";
-        var mkdocs_page_input_path = "installation/hardware.md";
+        var mkdocs_page_name = "Getting Help";
+        var mkdocs_page_input_path = "help/discord.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -51,19 +51,23 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Help</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../help/discord/">Getting Help</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Getting Help</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#discord">Discord</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#file-a-bug">File a bug</a>
+    </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Installation</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Hardware</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../installation/hardware/">Hardware</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../software/">Software</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../installation/software/">Software</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../firmware/">Firmware</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../installation/firmware/">Firmware</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">How To Knit</span></p>
@@ -110,10 +114,10 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Installation &raquo;</li>
-      <li>Hardware</li>
+          <li>Help &raquo;</li>
+      <li>Getting Help</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/AllYarnsAreBeautiful/ayab-manual/edit/master/docs/installation/hardware.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/AllYarnsAreBeautiful/ayab-manual/edit/master/docs/help/discord.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
   <hr/>
@@ -121,21 +125,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="hardware-install">Hardware install</h1>
-<p>AYAB hardware comes in two versions, known as the shield and interface versions.
-Electronically they are the same, except that they use different flavors of the Arduino chip, so they need different drivers.  The Arduino is soldered onto the interface, in the shield version it's a separate board that sits underneath.</p>
-<p>The Arduino itself is powered from the USB cable. For the power connection to the machine's patterning mechanism, follow the installation instructions that came with your hardware.<br />
-See also:
-<a href="https://vimeo.com/99870358">https://vimeo.com/99870358</a> Click the CC button to see subtitles in English. And for the interface;
-<a href="https://wiki.evilmadscientist.com/AYAB_Hardware_Installation">https://wiki.evilmadscientist.com/AYAB_Hardware_Installation</a></p>
-<p><strong>Very Important: In the shield version, you have to isolate the USB of the Arduino from the Power Connector to prevent short circuits!!</strong></p>
-<p><strong>Very Important: Please use a high-quality USB cable. With some cheap cables, the computer doesn't recognize the hardware!</strong></p>
+                <h1 id="getting-help">Getting help</h1>
+<h2 id="discord">Discord</h2>
+<p>We do most user support on Discord. Please direct your questions to the <a href="https://discord.gg/jafq6UJaDc">#help</a> channel.</p>
+<h2 id="file-a-bug">File a bug</h2>
+<p>You can file a bug through <a href="https://github.com/AllYarnsAreBeautiful/ayab-desktop/issues">Github</a>. </p>
+<p>First check and see if anyone has already reported your bug, if they have feel free to add more information about how you reproduced the error. If not click the green "New Issue" button and give us as much detail as you can. </p>
+<p>Please include the version of the software that you're working with. If you have the 1.0 release, navigate to <code>AYAB</code> -&gt; <code>About AYAB</code> and include the string there.</p>
+<p>We may reach out for more information if we need it.</p>
+<p>If you don't have a github account then let us know what's going on on Discord.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../help/discord/" class="btn btn-neutral float-left" title="Getting Help"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../software/" class="btn btn-neutral float-right" title="Software">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../whats-new-in-1.0/" class="btn btn-neutral float-left" title="What's new in AYAB 1.0"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../installation/hardware/" class="btn btn-neutral float-right" title="Hardware">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -162,10 +166,10 @@ See also:
         </span>
     
     
-      <span><a href="../../help/discord/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../whats-new-in-1.0/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../software/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../installation/hardware/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

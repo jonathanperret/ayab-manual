@@ -50,6 +50,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../whats-new-in-1.0/">What's new in AYAB 1.0</a>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">Help</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../help/discord/">Getting Help</a>
+                  </li>
+              </ul>
               <p class="caption"><span class="caption-text">Installation</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../installation/hardware/">Hardware</a>
@@ -70,6 +75,8 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../how_to_knit/dbj_heart-of-pluto/">Heart of Pluto</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../how_to_knit/circular_knitting/">Circular Knitting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../how_to_knit/garter_carriage/">Garter Carriage</a>
                   </li>
               </ul>
               <ul>
@@ -487,28 +494,28 @@ bytes are required by the SLIP protocol are not included in the message length.<
 <td></td>
 <td></td>
 <td></td>
-<td>0 = no carriage detected</td>
+<td>FF = no carriage detected</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>1 = Knit carriage</td>
+<td>0 = Knit carriage</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>2 = Lace carriage</td>
+<td>1 = Lace carriage</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>3 = Garter carriage</td>
+<td>2 = Garter carriage</td>
 </tr>
 <tr>
 <td></td>
@@ -529,21 +536,21 @@ bytes are required by the SLIP protocol are not included in the message length.<
 <td></td>
 <td></td>
 <td></td>
-<td>0 = direction not known</td>
+<td>0 = Left</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>1 = Left</td>
+<td>1 = Right</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>2 = Right</td>
+<td>other = direction not known</td>
 </tr>
 <tr>
 <td>host</td>
